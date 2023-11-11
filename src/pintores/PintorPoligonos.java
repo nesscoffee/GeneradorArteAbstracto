@@ -32,7 +32,7 @@ public class PintorPoligonos implements Pintor {
 		for(int i = 0; i < lados; i++) {
 			double ang = 2 * Math.PI * i / lados;
 			puntosX[i] = (int) (x + size * Math.cos(ang));
-			puntosY[i] = (int) (x + size * Math.sin(ang));
+			puntosY[i] = (int) (y + size * Math.sin(ang));
 		}
 		graphics.fillPolygon(puntosX, puntosY, lados);
 		
